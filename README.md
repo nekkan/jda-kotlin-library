@@ -2,8 +2,8 @@
 Crie bots em JDA em Kotlin com facilidade usando o JDA-kt.
 
 
-# Instalação
-- O código do JDA-kt ainda não foi finalizado, então, a primeira build ainda não foi liberada. Em breve liberaremos o download em Gradle, Maven, etc, junto do código-fonte.
+# Instalação (Beta | Não testado)
+- Você pode obter o JDA-kt em Gradle, Maven, SBT e em Leiningen no Jitpack! https://jitpack.io/#nekkan/JDA-kt
 
 
 # Ligando o bot
