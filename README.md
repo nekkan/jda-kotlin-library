@@ -41,7 +41,7 @@ Para ambos os modos de fazer, você necessita de um parâmetro inicial para faze
 
 Exemplos:
 
-**Usando o builder:**
+**Usando o builder (Recomendado):**
 
 ```kotlin
 val jda: JDA = build("...", true)
@@ -94,6 +94,19 @@ Para reagir a mensagens de forma assíncrona, você pode usar `Message#react(rem
 `msg.react(false, "🏓", "✌") //Ps: Você pode adicionar apenas um emoji, mas eu mostrei com 2 para um exemplo`. Para remover as reações antigas o bot precisa de permissão para isso.
 
 Para parar o tempo (dar delay) sem interferir em outras funções sem usar uma função suspend, você pode usar `pause(long)`.
+
+
+# Ações repetidas (DSL):
+Você pode repetir ações de forma simples usando `repeatingTask(int(Quantas vezes será repetido), delayMillis) { //código// }`
+
+Exemplo:
+```kotlin
+var i = 0
+repeatingTask(10, 1000) { //Será repetida 10 vezes a cada 1 segundo (1000ms).
+  i++
+  println(i)
+}
+```
 
 
 # Utilidades:
