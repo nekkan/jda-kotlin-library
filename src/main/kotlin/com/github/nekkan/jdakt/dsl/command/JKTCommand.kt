@@ -30,7 +30,7 @@ class JKTCommand(val jda: JDA, val prefix: String, val name: String, val aliases
 
 }
 
-class JKTCommandCreator(
+open class JKTCommandCreator(
     var prefix: Any = "",
     var name: String,
     var aliases: List<String>? = null,
