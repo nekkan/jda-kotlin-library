@@ -5,7 +5,7 @@ Crie bots em JDA em Kotlin com facilidade usando o JDA-kt.
 # Instalação
 - Você pode obter o JDA-kt em Gradle, Maven, SBT e em Leiningen no Jitpack! [Clique aqui!](https://jitpack.io/#nekkan/JDA-kt)
 - Você precisa das dependências: 
-- - **[net.dv8tion:JDA](github.com/DV8FromTheWorld/JDA)** (obrigatório);
+- - **[net.dv8tion:JDA](https://github.com/DV8FromTheWorld/JDA)** (obrigatório);
 - - **[org.jetbrains.kotlinx:kotlinx-coroutines-android](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android)** (obrigatório).
 
 
