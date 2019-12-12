@@ -1,12 +1,19 @@
+[version]: https://raster.shields.io/badge/Versão-1.3.1-yellow.svg
+[jitpack]: https://raster.shields.io/badge/Download-Jitpack-blue.svg
+[jitpackurl]: https://jitpack.io/#nekkan/JDA-kt
+
+![version] [![jitpack][]][jitpackurl]
+
 # JDA-kt
-Crie bots em JDA em Kotlin com facilidade usando o JDA-kt.
+
+A função principal do JDA-kt é lhe auxiliar na criação de eventos, comandos, embeds, entre outras coisas para facilitar seu código e deixá-lo com uma ótima legibilidade com o JDA.
 
 
 # Instalação
 - Você pode obter o JDA-kt em Gradle, Maven, SBT e em Leiningen no Jitpack! [Clique aqui!](https://jitpack.io/#nekkan/JDA-kt)
 - Você precisa das dependências: 
-- - **[net.dv8tion:JDA](https://github.com/DV8FromTheWorld/JDA)** (obrigatório);
-- - **[org.jetbrains.kotlinx:kotlinx-coroutines-android](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android)** (obrigatório).
+- - **[JDA(https://github.com/DV8FromTheWorld/JDA)** (obrigatório);
+- - **[Kotlin Coroutines](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android)** (obrigatório).
 
 
 # Ligando o bot
