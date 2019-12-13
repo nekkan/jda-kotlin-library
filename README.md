@@ -1,4 +1,4 @@
-[version]: https://raster.shields.io/badge/Versão-1.3.21-yellow.svg
+[version]: https://raster.shields.io/badge/Versão-1.3.21--beta1-yellow.svg
 [jitpack]: https://raster.shields.io/badge/Download-Jitpack-blue.svg
 [jitpackurl]: https://jitpack.io/#nekkan/JDA-kt
 
