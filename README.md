@@ -12,7 +12,7 @@ A função principal do JDA-kt é lhe auxiliar na criação de eventos, comandos
 # Instalação
 - Você pode obter o JDA-kt em Gradle, Maven, SBT e em Leiningen no Jitpack! [Clique aqui!](https://jitpack.io/#nekkan/JDA-kt)
 - Você precisa das dependências: 
-- - **[JDA(https://github.com/DV8FromTheWorld/JDA)** (obrigatório);
+- - **[JDA](https://github.com/DV8FromTheWorld/JDA)** (obrigatório);
 - - **[Kotlin Coroutines](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android)** (obrigatório).
 
 
