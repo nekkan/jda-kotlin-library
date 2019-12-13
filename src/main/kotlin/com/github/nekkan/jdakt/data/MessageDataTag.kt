@@ -19,9 +19,9 @@ fun Message.setDataTags(dataTagsList: List<String>) = tags.put(this, dataTagsLis
 val Message.dataTags: List<String>? get() = tags[this]?.toList()
 
 fun Message.containsDataTag(dataTag: String, ignoreCase: Boolean = false): Boolean {
-    val tags = tags[this]
-    if(tags != null) {
-        val filter: String? = tags.first { it.equals(dataTag, ignoreCase) }
+    val t = tags[this]
+    t?.let{
+        val filter: String? = t.first { it.equals(dataTag, ignoreCase) }
         filter?.let { return true }
     }
     return false

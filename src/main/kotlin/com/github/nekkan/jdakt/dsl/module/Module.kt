@@ -35,7 +35,9 @@ fun JDABuilder.addModule(module: Module) {
                 if(arguments[0].equals("${builder.prefix(event.guild)}${builder.name}", true)) isCorrect = true
                 if(!isCorrect) {
                     val usedAliases = builder.aliases?.filter { arguments[0].equals("${builder.prefix(event.guild)}$it", true) }
-                    if (usedAliases?.size!! >= 1) isCorrect = true
+                    usedAliases?.let {
+                        if(it.isNotEmpty()) isCorrect = true
+                    }
                 }
                 if(isCorrect) command(event)
             }
