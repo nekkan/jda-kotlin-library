@@ -1,3 +1,4 @@
+@file:JvmName("GuildExtensions")
 package com.github.nekkan.jdakt.extensions
 
 import com.github.nekkan.jdakt.extensions.async.msg

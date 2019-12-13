@@ -1,9 +1,7 @@
+@file:JvmName("KTUtils")
 package com.github.nekkan.jdakt.utils.kotlin
 
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.*
 
 fun List<String>.containsIgnoreCase(text: String): Boolean {
     val exists = filter { it.equals(text, true) }
@@ -19,4 +17,4 @@ fun repeatingTask(amount: Int, delayInMillis: Long, block: CoroutineScope.() -> 
     }
 }
 
-fun await(millis: Long) = runBlocking { delay(millis) }
+fun sleep(millis: Long) = GlobalScope.launch { delay(millis) }

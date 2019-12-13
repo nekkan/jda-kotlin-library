@@ -1,3 +1,4 @@
+@file:JvmName("JDAUtils")
 package com.github.nekkan.jdakt.utils.jda
 
 import com.github.nekkan.jdakt.dsl.module.Module

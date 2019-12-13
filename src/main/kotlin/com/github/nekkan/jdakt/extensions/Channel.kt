@@ -1,3 +1,4 @@
+@file:JvmName("ChannelExtensions")
 package com.github.nekkan.jdakt.extensions
 
 import com.github.nekkan.jdakt.extensions.async.async

@@ -1,6 +1,8 @@
+@file:JvmName("MessageChannelExtensions")
 package com.github.nekkan.jdakt.extensions.async
 
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import net.dv8tion.jda.api.EmbedBuilder
 import net.dv8tion.jda.api.MessageBuilder
 import net.dv8tion.jda.api.entities.Message
@@ -17,7 +19,7 @@ suspend fun <T> RestAction<T>.a(): T {
     }
 }
 
-fun <T> RestAction<T>.async(): T = runBlocking { a() }
+fun <T> RestAction<T>.async() = GlobalScope.launch { a() }
 
 fun MessageChannel.msg(msg: String) = sendMessage(msg).async()
 fun MessageChannel.msg(msg: Message) = sendMessage(msg).async()
@@ -41,13 +43,10 @@ fun MessageChannel.message(msg: MessageBuilder, func: (Message) -> Unit) = sendM
         m -> func(m) }
 
 
-fun MessageChannel.retrieve(amountOfMessages: Int): ArrayList<Message> {
-    val messages = ArrayList<Message>(amountOfMessages)
-    iterableHistory.cache(false).forEachAsync { msg ->
-        messages.add(msg)
-        return@forEachAsync messages.size < amountOfMessages
-    }
-    return messages
+fun MessageChannel.retrieve(amountOfMessages: Int): List<Message> {
+    val messages = mutableListOf<Message>()
+    messages.addAll(iterableHistory.cache(false).limit(amountOfMessages))
+    return messages.toList()
 }
 
 

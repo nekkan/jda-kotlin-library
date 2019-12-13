@@ -1,3 +1,4 @@
+@file:JvmName("MessageExtensions")
 package com.github.nekkan.jdakt.extensions.async
 
 import net.dv8tion.jda.api.Permission
