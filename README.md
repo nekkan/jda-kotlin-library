@@ -9,8 +9,8 @@ Você pode obter o JDA-kt em Gradle, Maven, SBT e em Leiningen no Jitpack! [Cliq
 
 Você precisa das dependências: 
 - **[JDA](https://github.com/DV8FromTheWorld/JDA)** (obrigatório);
-- **[Kotlin Coroutines](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android)** (obrigatório).
-- **[Kotlin Reflect](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-reflect)**
+- **[Kotlin Coroutines](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android)** (obrigatório);
+- **[Kotlin Reflect](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-reflect)** (obrigatório).
 
 # Por que utilizar?
 O JDA-kt faz todos os eventos e comandos em **async**, além de adicionar facilidade e legibilidade em seus códigos.
