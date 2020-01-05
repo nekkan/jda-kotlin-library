@@ -41,7 +41,7 @@ class HelloEvent: DiscordEvent<GuildMessageReceivedEvent>(GuildMessageReceivedEv
 
     init {
 
-        fun event { event, client ->
+        event { event, client ->
             println("Uma reação foi adicionada a mensagem com o ID ${event.messageId}")
             DiscordResult.SUCCESS
         }
