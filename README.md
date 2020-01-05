@@ -12,10 +12,10 @@ Você precisa das dependências:
 - **[Kotlin Coroutines](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-android)** (obrigatório).
 - **[Kotlin Reflect](https://mvnrepository.com/artifact/org.jetbrains.kotlin/kotlin-reflect)**
 
-#Por que utilizar?
+# Por que utilizar?
 O JDA-kt faz todos os eventos e comandos em **async**, além de adicionar facilidade e legibilidade em seus códigos.
 
-#Criando um client
+# Criando um client
 Crie uma classe e implemente **DiscordClient()** na mesma. Os parâmetros são **nome, prefix de comandos**. Em seguida, dê *override* no método **application** informando assim o token e algumas informações opcionais como **activity e status**. Em seguida, você deve dar override em **onReady** e inserir coisas de quando iniciar. Exemplo:
 ```kotlin
 @ObsoleteCoroutinesApi
@@ -34,7 +34,7 @@ class HelloDiscord: DiscordClient("discordbot1", ".") {
 }
 ```
 
-#Criando eventos
+# Criando eventos
 Para criar um evento, você deve criar uma classe na qual implementa **DiscordEvent()**, informando como *generic* o evento desejado e como parâmetro a classe do evento desejado. Em seguida você deve usar o **init** do Kotlin e usar o método **event()** e dentro do mesmo inserir suas informações. Em seguida você deve retornar um valor do ENUM **DiscordResult**. Exemplo:
 ```kotlin
 class HelloEvent: DiscordEvent<GuildMessageReceivedEvent>(GuildMessageReceivedEvent::class) {
@@ -69,7 +69,7 @@ class HelloDiscord: DiscordClient("discordbot1", ".") {
 }
 ```
 
-#Criando comandos
+# Criando comandos
 Para criar um comando, você deve criar uma classe na qual implementa **DiscordCommand()** e então dar override no método **settings** inserindo as informações do comando e também no método **run**, na qual você cria o código de sua aplicação. Assim como os eventos, você deve retornar um ENUM de **DiscordResult**. Exemplo:
 ```kotlin
 @ObsoleteCoroutinesApi
