@@ -124,4 +124,4 @@ embed {
 
 
 
-<p><font size="1">Observação: A documentação ainda não foi concluída.</font></p>
+<sub><sup>A documentação ainda não foi concluída.</sub></sup>
