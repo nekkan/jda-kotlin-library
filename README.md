@@ -19,7 +19,7 @@ O **jda-kotlin-library** não interfere no utilizamento do JDA, não viola os To
 Você pode obter o **jda-kotlin-library** em Gradle, Maven, SBT e em Leiningen no Jitpack! [Clique aqui!](https://jitpack.io/#nekkan/jda-kotlin-library)
 
 ### Pré-requisitos
-- [Oracle JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) de no mínimo versão 8 (Java Development Kit). 
+- [JDK](https://www.oracle.com/technetwork/java/javase/downloads/index.html) de no mínimo versão 8 (Java Development Kit). 
 
 ### Dependências
 - **[JDA](https://github.com/DV8FromTheWorld/JDA)** (obrigatório)
