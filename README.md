@@ -3,7 +3,7 @@
 # jda-kotlin-library
 A função principal do **jda-kotlin-library** é lhe auxiliar na criação de eventos, comandos, embeds, entre outras coisas para facilitar seu código e deixá-lo com uma ótima legibilidade com o JDA.
 
-### Suḿario
+### Sumário
 O **jda-kotlin-library** não interfere no utilizamento do JDA, não viola os ToS do Discord, não coleta quaisquer dado e está livre para modificações desde que qualquer alteração esteja pública.
 
 - [Instalação e dependências](#instalao)
