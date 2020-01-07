@@ -159,10 +159,15 @@ event { event, client ->
 //Utilizando condições do jda-kotlin-library (AnyMap)
 event { event, client ->
     //Uso correto: map<T> { }. O <T> é opcional caso o Kotlin detecte o tipo.
-    map { event }.filter { !it.author.isBot }?.map { it.message.contentRaw }?.filter { it.startsWith("!") }?.
-        map { it.toLowerCase().split(" ") }?.filter { it[0] == "!ping" }?.subscribe(async = true) {
+    map { event }.
+    filter { !it.author.isBot }?.
+    map { it.message.contentRaw }?.
+    filter { it.startsWith("!") }?.
+    map { it.toLowerCase().split(" ") }?.
+    filter { it[0] == "!ping" }?
+    .subscribe(async = true) {
             event.reply("Pong!")
-        }
+        } //Deixei em várias linhas para entender mais fácil.
     DiscordResult.SUCCESS
 }
 ```
@@ -182,7 +187,7 @@ try {
     val member = listaDeMembros[6554]
     reply("Membro obtido!")
     return DiscordResult.SUCCESS
-} (exception: AlgumaException) {
+} catch(exception: AlgumaException) {
     println("Não foi possível obter um membro.")
     reply("Erro!")
     return DiscordResult.ERROR
