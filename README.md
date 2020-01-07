@@ -6,16 +6,16 @@ A função principal do **jda-kotlin-library** é lhe auxiliar na criação de e
 ### Sumário
 O **jda-kotlin-library** não interfere no utilizamento do JDA, não viola os ToS do Discord, não coleta quaisquer dado e está livre para modificações desde que qualquer alteração esteja pública.
 
-- [Instalação e dependências](#instalao)
+- [Download](#download)
 - [Por que utilizar?](#por-que-utilizar)
 - [Client](#criando-um-client)
 - [Eventos](#criando-eventos)
 - [Comandos](#criando-comandos)
 - [Embeds](#criando-embeds)
-- [Condições](#condies)
+- [Condições](#condições)
 - [Fails](#fails)
 
-### Instalação
+### Download
 Você pode obter o **jda-kotlin-library** em Gradle, Maven, SBT e em Leiningen no Jitpack! [Clique aqui!](https://jitpack.io/#nekkan/jda-kotlin-library)
 
 ### Pré-requisitos
