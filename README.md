@@ -33,7 +33,7 @@ O **jda-kotlin-library** faz todos os eventos e comandos em **async**, além de 
 Crie uma classe e implemente **DiscordClient()** na mesma. Os parâmetros são **nome, prefix de comandos**. Em seguida, dê *override* no método **application** informando assim o token e algumas informações opcionais como **activity e status**. Em seguida, você deve dar override em **onReady** e inserir coisas de quando iniciar. Exemplo:
 ```kotlin
 @ObsoleteCoroutinesApi
-class HelloDiscord: DiscordClient("discordbot1", ".") {
+class HelloDiscord: DiscordClient("discordbot1", { "." } /* (Guild) -> String */ ) {
 
     override var application = settings {
         token = "MVDSAOKkvb94958cvbSX.XhI6eg.NOTAREALTOKEN.GFDGF4543VFDKC_sdfkkj"
